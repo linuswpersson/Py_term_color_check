@@ -22,41 +22,41 @@ row3 = ["X", 0, 0, "pb", "pb", "X"]
 ## Note: de röda kryssen är för en finare bild i prototypningen, det är inte baserat på kundens önskemål. :)
 def print_row(row):
     for x in row:
-        print(Fore.BLACK + Back.BLUE + box[0], end='')
-    print(Fore.BLACK + Back.BLUE + " ")
+        print(Fore.BLACK + Back.WHITE + box[0], end='')
+    print(Fore.BLACK + Back.WHITE + " ")
 
-    print(Fore.BLACK + Back.BLUE + box[1], end='')
+    print(Fore.BLACK + Back.WHITE + box[1], end='')
     for x in row:
         if x == 'g':
-            print(Fore.WHITE + Back.BLUE + " G", end='')
+            print(Fore.WHITE + Back.WHITE + " G", end='')
         elif x == 'pw':
-            print(Fore.WHITE + Back.BLUE + " p", end='')
+            print(Fore.WHITE + Back.WHITE + " p", end='')
         elif x == 'pb':
-            print(Fore.BLACK + Back.BLUE + " p", end='')
+            print(Fore.BLACK + Back.WHITE + " p", end='')
         elif x == 'X':
-            print(Fore.RED + Back.BLUE + " X", end='')
+            print(Fore.RED + Back.WHITE + " X", end='')
         else:
-            print(Fore.BLACK + Back.BLUE + "  ", end='')
-        print(Fore.BLACK + Back.BLUE + box[2], end='')
+            print(Fore.BLACK + Back.WHITE + "  ", end='')
+        print(Fore.BLACK + Back.WHITE + box[2], end='')
 
     print()
 
     for x in row:
-        print(Fore.BLACK + Back.BLUE + box[0], end='')
-    print(Fore.BLACK + Back.BLUE + " ")
+        print(Fore.BLACK + Back.WHITE + box[0], end='')
+    print(Fore.BLACK + Back.WHITE + " ")
 
 
 ## En enkelt exempel på hur colorama fungerar
 def print_square_black(str):
-    print(Fore.BLACK + Back.BLUE + " --- ")
-    print(Fore.BLACK + Back.BLUE + "| ", Fore.BLACK + Back.BLUE + str, Fore.BLACK + Back.BLUE + " |", sep='')
-    print(Fore.BLACK + Back.BLUE + " --- ")
+    print(Fore.BLACK + Back.WHITE + " --- ")
+    print(Fore.BLACK + Back.WHITE + "| ", Fore.BLACK + Back.WHITE + str, Fore.BLACK + Back.WHITE + " |", sep='')
+    print(Fore.BLACK + Back.WHITE + " --- ")
 
 ## En enkelt exempel på hur colorama fungerar
 def print_square_white(str):
-    print(Fore.BLACK + Back.BLUE + " --- ")
-    print(Fore.BLACK + Back.BLUE + "| ", Fore.WHITE + Back.BLUE + str, Fore.BLACK + Back.BLUE + " |", sep='')
-    print(Fore.BLACK + Back.BLUE + " --- ")
+    print(Fore.BLACK + Back.WHITE + " --- ")
+    print(Fore.BLACK + Back.WHITE + "| ", Fore.WHITE + Back.WHITE + str, Fore.BLACK + Back.WHITE + " |", sep='')
+    print(Fore.BLACK + Back.WHITE + " --- ")
 
 
 
